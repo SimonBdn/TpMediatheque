@@ -9,7 +9,7 @@ public class Main {
         mediatheque.addItem( new CD(12, "Sergeant Peppers"));
         mediatheque.addItem( new CD(34, "Les Etoiles Vagabondes"));
         mediatheque.printCatalog();
-        //mediatheque.printOnlyBooks();
-        //mediatheque.printOnlyCDs();
+        mediatheque.printOnlyBooks();
+        mediatheque.printOnlyCDs();
     }
 }

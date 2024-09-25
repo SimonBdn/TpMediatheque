@@ -7,5 +7,6 @@ public class PrintCDOnlyVisitor implements ItemVisitor {
 
     @Override
     public void visit(CD cd) {
+        cd.print();
     }
 }
