@@ -9,10 +9,13 @@ public class Mediatheque {
 	public void addItem(Item i) {
 		items.add(i);
 	}
-	
+
 	public void printCatalog() {
-		for (Item i : items)
-			i.print();
+		System.out.println("Print Catalog : ");
+		PrintCatalogVisitor printCatalogVisitor = new PrintCatalogVisitor();
+		for (Item i : items) {
+			i.accept(printCatalogVisitor);
+		}
 	}
 	
 	public void printOnlyBooks() {
